@@ -1,0 +1,54 @@
+body {
+ background-image: url('ceu.jpg');
+ background-repeat: no-repeat;
+ background-color: rgb(163, 117, 159);
+  color: rgb(223, 62, 123);
+  font: 70px "Century Gothic", Futura, sans-serif;
+  margin: 70px;
+}
+
+ol, ul {
+  padding-left: 60px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 50px;
+}
+
+.square {
+  background: rgb(216, 165, 205);
+  border: 1px solid rgb(136, 81, 122);
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: rgb(239, 237, 243);
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 100px;
+}
